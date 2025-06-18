@@ -11,9 +11,11 @@ from fastapi.responses import JSONResponse
 from app.api.middlewares.auth import authMiddleware
 from app.api.routes.agent import router as agent_router
 from app.api.routes.chatbot import router as chatbot_router
+from app.api.routes.chat_document_upload import router as chat_document_router
 from app.api.routes.health import router as health_router
 from app.api.routes.records import router as records_router
 from app.api.routes.search import router as search_router
+from app.api.routes.sql_query import router as sql_router
 from app.config.configuration_service import DefaultEndpoints, config_node_constants
 from app.config.utils.named_constants.http_status_code_constants import HttpStatusCode
 from app.setups.query_setup import AppContainer
@@ -208,6 +210,8 @@ app.include_router(chatbot_router, prefix="/api/v1")
 app.include_router(records_router, prefix="/api/v1")
 app.include_router(agent_router, prefix="/api/v1")
 app.include_router(health_router, prefix="/api/v1")
+app.include_router(sql_router, prefix="/api/v1/sql")
+app.include_router(chat_document_router, prefix="/api/v1/chat-documents")
 
 
 def run(host: str = "0.0.0.0", port: int = 8000, reload: bool = True) -> None:

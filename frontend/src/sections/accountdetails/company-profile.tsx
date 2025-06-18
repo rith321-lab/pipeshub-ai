@@ -378,7 +378,7 @@ export default function CompanyProfile() {
                     </Grid>
                     <Grid item xs={12} sm={6}>
                       <Tooltip
-                        title="The name of the company to display within Pipeshub"
+                        title="The name of the company to display within Verita AI"
                         arrow
                         placement="top-start"
                       >
@@ -591,7 +591,7 @@ export default function CompanyProfile() {
 
                   <Box>
                     <Typography variant="body2" sx={{ color: theme.palette.text.secondary, mb: 1 }}>
-                      PipesHub collects and processes personal information for a variety of business
+                      Verita AI collects and processes personal information for a variety of business
                       purposes.
                     </Typography>
 
@@ -900,7 +900,7 @@ export default function CompanyProfile() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ fontSize: '0.85rem' }}>
                   Your logo will appear on your account dashboard, emails, and documents generated
-                  from PipesHub.
+                                          from Verita AI.
                 </Typography>
               </Paper>
             </Grid>

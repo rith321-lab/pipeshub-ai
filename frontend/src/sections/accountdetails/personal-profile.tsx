@@ -532,7 +532,7 @@ export default function PersonalProfile() {
                             variant="body2"
                             sx={{ color: theme.palette.text.secondary, mb: 1 }}
                           >
-                            PipesHub collects and processes personal information for a variety of
+                            Verita AI collects and processes personal information for a variety of
                             business purposes.
                           </Typography>
 

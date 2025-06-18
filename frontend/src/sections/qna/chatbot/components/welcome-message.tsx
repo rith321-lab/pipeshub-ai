@@ -376,7 +376,7 @@ const WelcomeMessageComponent = ({ onSubmit, isLoading = false }: WelcomeMessage
             WebkitTextFillColor: 'transparent',
           }}
         >
-          PipesHub AI
+                          Verita AI
         </Typography>
 
         <Typography

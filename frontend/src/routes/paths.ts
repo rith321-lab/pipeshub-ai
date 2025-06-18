@@ -56,5 +56,8 @@ export const paths = {
     copilot: {
       root: `${ROOTS.DASHBOARD}copilot`,
     },
+    sqlExplorer: {
+      root: `${ROOTS.DASHBOARD}sql-explorer`,
+    },
   },
 };
