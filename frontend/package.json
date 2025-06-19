@@ -9,6 +9,7 @@
     "dev": "vite",
     "start": "vite preview",
     "build": "tsc && vite build",
+    "vercel-build": "tsc && vite build",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "fm:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
@@ -20,7 +21,7 @@
     "dev:host": "vite --host"
   },
   "engines": {
-    "node": "20.x"
+    "node": ">=20.x"
   },
   "packageManager": "yarn@1.22.22",
   "dependencies": {
