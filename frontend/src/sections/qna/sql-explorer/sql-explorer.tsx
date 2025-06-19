@@ -38,7 +38,7 @@ import {
 import Plot from 'react-plotly.js';
 
 import { useAuthContext } from 'src/auth/hooks';
-import { axiosInstance } from 'src/utils/axios';
+import axiosInstance from 'src/utils/axios';
 
 // Types
 interface SQLQueryResult {

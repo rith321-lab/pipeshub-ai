@@ -32,7 +32,7 @@ import {
 } from '@mui/icons-material';
 
 import { useAuthContext } from 'src/auth/hooks';
-import { axiosInstance } from 'src/utils/axios';
+import axiosInstance from 'src/utils/axios';
 
 // Types
 interface UploadedDocument {
@@ -185,7 +185,7 @@ const DocumentUpload: React.FC<DocumentUploadProps> = ({
             headers: {
               'Content-Type': 'multipart/form-data',
             },
-            onUploadProgress: (progressEvent) => {
+            onUploadProgress: (progressEvent: any) => {
               if (progressEvent.total) {
                 const percentCompleted = Math.round(
                   (progressEvent.loaded * 100) / progressEvent.total
